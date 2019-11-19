@@ -18,7 +18,7 @@
     "resources": [
        {
           "apiVersion": "2017-03-03-preview",
-          "name": "[concat(parameters('workspaceName'), '/', 'Restore_jobs')]",
+          "name": "[concat(parameters('workspaceName'), '/', 'Restore jobs')]",
           "type": "Microsoft.OperationalInsights/workspaces/views",
           "properties": {
              "Id": "Restore Jobs",
