@@ -18,7 +18,7 @@
     "resources": [
        {
           "apiVersion": "2017-03-03-preview",
-          "name": "[concat(parameters('workspaceName'), '/', 'Cloud storage')]",
+          "name": "[concat(parameters('workspaceName'), '/', 'Cloud_storage')]",
           "type": "Microsoft.OperationalInsights/workspaces/views",
           "properties": {
              "Id": "Cloud Storage",

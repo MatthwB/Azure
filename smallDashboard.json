@@ -42,7 +42,7 @@
         {
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-05-01",
-            "name": "Backup jobs",
+            "name": "Backup_jobs",
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
@@ -63,7 +63,7 @@
         {
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-05-01",
-            "name": "Restore jobs",
+            "name": "Restore_jobs",
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
@@ -84,7 +84,7 @@
         {
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-05-01",
-            "name": "Backup items",
+            "name": "Backup_items",
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
@@ -105,7 +105,7 @@
         {
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-05-01",
-            "name": "Cloud storage",
+            "name": "Cloud_storage",
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
