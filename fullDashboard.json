@@ -16,7 +16,7 @@
             }
         },
         "_artifactsLocation": {
-            "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-backup-la-reporting/",
+            "defaultValue": "https://raw.githubusercontent.com/MatthwB/Azure/master/",
             "type": "String",
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located"
@@ -32,13 +32,13 @@
     },
     "variables": {
         "nestedTemplates": {
-            "backup_jobs_non_log": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/backup_jobs_non_log.json', parameters('_artifactsLocationSasToken')))]",
-            "backup_jobs_log": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/backup_jobs_log.json', parameters('_artifactsLocationSasToken')))]",
-            "restore_jobs": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/restore_jobs.json', parameters('_artifactsLocationSasToken')))]",
-            "azure_alerts": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/azure_alerts.json', parameters('_artifactsLocationSasToken')))]",
-            "on_prem_alerts": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/on_prem_alerts.json', parameters('_artifactsLocationSasToken')))]",
-            "backup_items": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/backup_items.json', parameters('_artifactsLocationSasToken')))]",
-            "cloud_storage": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/cloud_storage.json', parameters('_artifactsLocationSasToken')))]"
+            "backup_jobs_non_log": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/backupJobs.json', parameters('_artifactsLocationSasToken')))]",
+            "backup_jobs_log": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/backupJobsLog.json', parameters('_artifactsLocationSasToken')))]",
+            "restore_jobs": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/restoreJobs.json', parameters('_artifactsLocationSasToken')))]",
+            "azure_alerts": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/azureAlerts.json', parameters('_artifactsLocationSasToken')))]",
+            "on_prem_alerts": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/onpremAlerts.json', parameters('_artifactsLocationSasToken')))]",
+            "backup_items": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/backupItems.json', parameters('_artifactsLocationSasToken')))]",
+            "cloud_storage": "[uri(parameters('_artifactsLocation'), concat('nestedtemplates/cloudStorage.json', parameters('_artifactsLocationSasToken')))]"
         }
     },
     "resources": [
